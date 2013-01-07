@@ -14,7 +14,7 @@ describe('ancestorTree', function () {
   describe('#default()', function() {
     MockSchema.plugin(ancestorTree);
     var MockModel = db.model('ancestorMock', MockSchema);
-    var parent   = new MockModel({});
+    var parent   = new MockModel({parent:''});
     var child    = new MockModel({parent: parent._id});
     var subChild = new MockModel({parent: child._id});
     
