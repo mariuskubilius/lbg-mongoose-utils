@@ -1,0 +1,33 @@
+{
+  "name" : "lbg-mongoose-utils",
+  "version" : "0.0.1",
+  "description" : "a collection of plugins used in my projects for mongoose",
+  "main" : "index.js",
+  "bin" : {},
+  "directories" : {
+    "test" : "test"
+  },
+  "scripts" : {
+    "test": "make test && make clean"
+  },
+  "dependencies" : {
+    "mongoose": "~3.5.x"
+  },
+  "devDependencies" : {
+    "mocha": "~0.10.0"
+  },
+  "keywords" : [
+    "mongoose",
+    "mongoose 3.5.x",
+    "slugs",
+    "unique-slugs",
+    "array of ancestors",
+    "tree"
+  ],
+  "author" : {
+    "name" : "Marius Kubilius",
+    "email" : "marius.kubilius@gmail.com",
+    "url" : "https://www.littleboygenius.com"
+  },
+  "license" : "MIT"
+}
