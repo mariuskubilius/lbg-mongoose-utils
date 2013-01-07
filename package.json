@@ -1,22 +1,22 @@
 {
-  "name" : "lbg-mongoose-utils",
-  "version" : "0.0.1",
-  "description" : "a collection of plugins used in my projects for mongoose",
-  "main" : "index.js",
-  "bin" : {},
-  "directories" : {
-    "test" : "test"
+  "name": "lbg-mongoose-utils",
+  "version": "0.0.1",
+  "description": "a collection of plugins used in my projects for mongoose",
+  "main": "index.js",
+  "bin": {},
+  "directories": {
+    "test": "test"
   },
-  "scripts" : {
+  "scripts": {
     "test": "make test && make clean"
   },
-  "dependencies" : {
+  "dependencies": {
     "mongoose": "~3.5.x"
   },
-  "devDependencies" : {
+  "devDependencies": {
     "mocha": "~0.10.0"
   },
-  "keywords" : [
+  "keywords": [
     "mongoose",
     "mongoose 3.5.x",
     "slugs",
@@ -24,10 +24,12 @@
     "array of ancestors",
     "tree"
   ],
-  "author" : {
-    "name" : "Marius Kubilius",
-    "email" : "marius.kubilius@gmail.com",
-    "url" : "https://www.littleboygenius.com"
-  },
-  "license" : "MIT"
+  "author": "Marius Kubilius <marius.kubilius@gmail.com> (http://www.littleboygenius.com)",
+  "license": "BSD",
+  "readmeFilename": "readme.md",
+  "gitHead": "18f8d5525c598acbff084cf9b9e2c29ad2517ee9",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mariuskubilius/lbg-mongoose-utils.git"
+  }
 }
