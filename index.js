@@ -1,3 +1,5 @@
-require('directory')(__dirname + '/lib/', function (fn, filename) {
-  module.exports[filename] = fn
-})
+var slugify = require('../lib/slugify');
+var ancestorTree = require('../lib.ancestorTree');
+module.exports[slugify] = slugify;
+module.exports[ancestorTree] = ancestorTree;
+
