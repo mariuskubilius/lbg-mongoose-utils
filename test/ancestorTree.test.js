@@ -2,7 +2,7 @@
 var assert = require('assert');
 var mongoose = require('mongoose');
 //mongoose.set('debug', true);
-var slugify = require('../lib/ancestorTree');
+var ancestorTree = require('../lib/ancestorTree');
 var common = require('./utils/common');
 var db = common.db;
 var Schema = mongoose.Schema;
