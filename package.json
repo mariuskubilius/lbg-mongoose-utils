@@ -14,7 +14,8 @@
     "mongoose": "~3.5.x"
   },
   "devDependencies": {
-    "mocha": "~0.10.0"
+    "mocha": "~0.10.0",
+    "async": "latest"
   },
   "keywords": [
     "mongoose",
