@@ -160,6 +160,12 @@ describe('ancestorTree', function () {
               assert.strictEqual(children[2]._id.toString(), asc._id.toString());
               cb(err);
             });
+          },
+          function(cb) {
+            doc.findChildren(function(err, children){
+              assertStrictEqual(err, null, 'should work with one argument only.');
+              cb(err);
+            });
           }
 
         ],
