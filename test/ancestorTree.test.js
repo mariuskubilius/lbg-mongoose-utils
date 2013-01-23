@@ -163,7 +163,7 @@ describe('ancestorTree', function () {
           },
           function(cb) {
             doc.findChildren(function(err, children){
-              assertStrictEqual(err, null, 'should work with one argument only.');
+              assert.strictEqual(err, null, 'should work with one argument only.');
               cb(err);
             });
           }
@@ -184,6 +184,32 @@ describe('ancestorTree', function () {
           assert.strictEqual(ancestors[0]._id.toString(), c._id.toString());
           assert.strictEqual(ancestors[1]._id.toString(), ac._id.toString());
           done();
+        });
+      });
+    });
+    
+    it('should not delete items with children.', function(done){
+      MockModel.findOne({_id: c._id}, function(err, doc){
+        doc.remove(function(err, res){
+          assert.strictEqual('Please delete/move all children before proceeding', err.message);
+          MockModel.count({_id: c._id}, function(err, count){
+            assert.strictEqual(err, null);
+            assert.strictEqual(count, 1);
+            done();
+          });
+        });
+      });
+    });
+    
+    it('should Delete items without children.', function(done){
+      MockModel.findOne({_id: asc._id}, function(err, doc){
+        doc.remove( function(err, res){
+          assert.strictEqual(err, null);
+          MockModel.count({_id: asc._id}, function(err, count){
+            assert.strictEqual(err, null);
+            assert.strictEqual(count, 0);
+            done();
+          });
         });
       });
     });
