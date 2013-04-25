@@ -1,6 +1,6 @@
 {
   "name": "lbg-mongoose-utils",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a collection of plugins used in my projects for mongoose",
   "main": "index.js",
   "bin": {},
@@ -11,7 +11,7 @@
     "test": "make test && make clean"
   },
   "dependencies": {
-    "mongoose": "~3.5.x"
+    "mongoose": "~3.6.x"
   },
   "devDependencies": {
     "mocha": "~0.10.0",
@@ -19,7 +19,7 @@
   },
   "keywords": [
     "mongoose",
-    "mongoose 3.5.x",
+    "mongoose 3.6.x",
     "slugs",
     "unique-slugs",
     "array of ancestors",
