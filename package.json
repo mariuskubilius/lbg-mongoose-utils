@@ -1,6 +1,6 @@
 {
   "name": "lbg-mongoose-utils",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "a collection of plugins used in my projects for mongoose",
   "main": "index.js",
   "bin": {},
