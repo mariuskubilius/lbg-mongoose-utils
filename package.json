@@ -1,36 +1,37 @@
 {
-  "name": "lbg-mongoose-utils",
-  "version": "0.0.8",
-  "description": "a collection of plugins used in my projects for mongoose",
-  "main": "index.js",
-  "bin": {},
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "make test && make clean"
-  },
-  "dependencies": {
-    "mongoose": "~3.6.x"
-  },
-  "devDependencies": {
-    "mocha": "~0.10.0",
-    "async": "latest"
-  },
-  "keywords": [
-    "mongoose",
-    "mongoose 3.6.x",
-    "slugs",
-    "unique-slugs",
-    "array of ancestors",
-    "tree"
-  ],
-  "author": "Marius Kubilius <marius.kubilius@gmail.com> (http://www.littleboygenius.com)",
-  "license": "BSD",
-  "readmeFilename": "readme.md",
-  "gitHead": "18f8d5525c598acbff084cf9b9e2c29ad2517ee9",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mariuskubilius/lbg-mongoose-utils.git"
-  }
+	"name": "lbg-mongoose-utils",
+	"version": "0.0.9",
+	"description": "a collection of plugins used in my projects for mongoose",
+	"main": "index.js",
+	"bin": {},
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"test": "make test"
+	},
+	"dependencies": {
+		"mongoose": "*"
+	},
+	"devDependencies": {
+		"mocha": "*",
+		"assert": "*",
+		"async": "*"
+	},
+	"keywords": [
+		"mongoose",
+		"mongoose 3.6.x",
+		"slugs",
+		"unique-slugs",
+		"array of ancestors",
+		"tree"
+	],
+	"author": "Marius Kubilius <marius.kubilius@gmail.com> (http://www.littleboygenius.com)",
+	"license": "BSD",
+	"readmeFilename": "readme.md",
+	"gitHead": "18f8d5525c598acbff084cf9b9e2c29ad2517ee9",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/mariuskubilius/lbg-mongoose-utils.git"
+	}
 }
