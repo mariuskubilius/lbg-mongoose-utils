@@ -37,7 +37,7 @@ describe('ancestorTree', function () {
           parent.save(function(err, doc){
             assert.strictEqual(typeof doc.parent, 'undefined', 'parent should be not set');
             assert.strictEqual(typeof doc.ancestors, 'object', 'ancestors should be array');
-            assert.strictEqual(doc.parent, undefined, 'no parent should be set');
+            assert.equal(doc.parent, undefined, 'no parent should be set');
             assert.strictEqual(doc.ancestors.length, 0, 'ancestors array should be empty');
             cb(err);
           });
