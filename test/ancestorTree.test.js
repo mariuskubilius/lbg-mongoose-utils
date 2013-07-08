@@ -37,17 +37,18 @@ describe('ancestorTree', function () {
           parent.save(function(err, doc){
             assert.strictEqual(typeof doc.parent, 'undefined', 'parent should be not set');
             assert.strictEqual(typeof doc.ancestors, 'object', 'ancestors should be array');
-            assert.equal(doc.parent, undefined, 'no parent should be set');
+            assert.strictEqual(doc.parent, undefined, 'no parent should be set');
             assert.strictEqual(doc.ancestors.length, 0, 'ancestors array should be empty');
             cb(err);
           });
         },
         function(cb){
           child.save(function(err,doc){
-            assert.strictEqual(typeof doc.parent, 'object');
+            assert.strictEqual(err, null, 'No errors while saving');
+						assert.strictEqual(typeof doc.parent, 'object');
             assert.strictEqual(doc.parent, parent._id);
             assert.strictEqual(typeof doc.ancestors, 'object');
-            assert.strictEqual(doc.ancestors.length, 1);
+            assert.strictEqual(doc.ancestors.length, 1, 'the node is a children.');
             assert.strictEqual(doc.ancestors[0], parent._id);
             cb(err);
           });
