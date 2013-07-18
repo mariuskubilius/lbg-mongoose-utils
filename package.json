@@ -15,7 +15,6 @@
 	},
 	"devDependencies": {
 		"mocha": "*",
-		"assert": "*",
 		"async": "*"
 	},
 	"keywords": [
